@@ -1,0 +1,7 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/central-package-management for more details on central package
+  management in .NET -->
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+</Project>
