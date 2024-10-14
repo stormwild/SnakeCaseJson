@@ -1,0 +1,6 @@
+@SnakeCaseJson.Api_HostAddress = http://localhost:5232
+
+GET {{SnakeCaseJson.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

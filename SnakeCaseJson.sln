@@ -14,14 +14,34 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D3848BEA-68B9-49D8-8C62-407F80E43BD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeCaseJson.Api", "src\SnakeCaseJson.Api\SnakeCaseJson.Api.csproj", "{8D8CC3DA-7FFC-496A-907B-908A4B0510A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{23C0749D-763F-4081-A856-26A0E0312631}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeCaseJson.Api.Tests", "tests\SnakeCaseJson.Api.Tests\SnakeCaseJson.Api.Tests.csproj", "{FD6A12C5-9535-4722-8C74-1DDD7E7A3CAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D8CC3DA-7FFC-496A-907B-908A4B0510A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D8CC3DA-7FFC-496A-907B-908A4B0510A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D8CC3DA-7FFC-496A-907B-908A4B0510A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D8CC3DA-7FFC-496A-907B-908A4B0510A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD6A12C5-9535-4722-8C74-1DDD7E7A3CAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD6A12C5-9535-4722-8C74-1DDD7E7A3CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD6A12C5-9535-4722-8C74-1DDD7E7A3CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD6A12C5-9535-4722-8C74-1DDD7E7A3CAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8D8CC3DA-7FFC-496A-907B-908A4B0510A7} = {D3848BEA-68B9-49D8-8C62-407F80E43BD1}
+		{FD6A12C5-9535-4722-8C74-1DDD7E7A3CAA} = {23C0749D-763F-4081-A856-26A0E0312631}
 	EndGlobalSection
 EndGlobal
