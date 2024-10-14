@@ -11,20 +11,22 @@ public class GetWeatherForecast : IEndpoint
 
     public void MapEndpoints(IEndpointRouteBuilder app)
     {
-        app.MapGet("/weatherforecast", () =>
-        {
-            var forecast = Enumerable.Range(1, 5).Select(index =>
-                new WeatherForecast
-                (
-                    DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                    Random.Shared.Next(-20, 55),
-                    Summaries[Random.Shared.Next(Summaries.Length)]
-                ))
-                .ToArray();
-            return forecast;
-        })
+        app.MapGet("/weatherforecast", GetForecast)
         .WithName("GetWeatherForecast")
         .WithOpenApi();
+    }
+
+    public static WeatherForecast[] GetForecast()
+    {
+        var forecast = Enumerable.Range(1, 5).Select(index =>
+            new WeatherForecast
+            (
+                DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+                Random.Shared.Next(-20, 55),
+                Summaries[Random.Shared.Next(Summaries.Length)]
+            ))
+            .ToArray();
+        return forecast;
     }
 }
 
